@@ -1,8 +1,11 @@
 *{
   font-family: sans-serif;
-  background-color: lightblue;
+  background-color: black;
+  background: url("bg.gif") no-repeat center fixed;
+	background-size: cover;
+  z-index: 1;
 }
 
 h1{
-  color: black;
+  color: white;
 }
