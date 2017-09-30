@@ -7,7 +7,7 @@
   </head>
   <body>
 <!--
-Version 1.0012
+Version 2.0001
 - Design a guessing game about you that involves **FIVE** yes/no questions. Be creative and fun and whimsical. Or not. It's up to you! It's your project!
 - The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either `.toUpperCase()` or `.toLowerCase()` used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
 - Useful and descriptive `console.log()` messages in the JS are well written and correctly displaying to the browser console for each question of the guessing game.
@@ -17,7 +17,18 @@ https://www.youtube.com/watch?v=-RLE2Q7OzME&list=PL00952AC35D0A4701&index=103
 
 -->
     <h1>How well do you know me?</h1>
-    <button onclick="alert('' + user + ', You got ' + userPoints + ' question(s) right.')">View Score</button>
+    <!--Custom dialog box only works on button due to no jquery to stop the dialog boxes from starting automatically on page load.-->
+    <button onclick="Alert.render('' + user + ', You got ' + userPoints + ' question(s) right.')">View Score</button>
+
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+      <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+      </div>
+    </div>
+
     <script type="text/JavaScript" src="app.js"></script>
   </body>
 </html>
