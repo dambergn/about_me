@@ -46,6 +46,7 @@ while(!user){
 if (user !== 'nick'){
   alert('too bad you are not nick');
 }
+console.log('user, ' + user);
 
 //Question 1
 var answer1 = prompt('Is Nick\'s favorite food sushi?  Type yes or no.').toLowerCase();//makes answers all lowercase
@@ -106,3 +107,24 @@ if(answer5 === 'no' || answer5 === 'n'){
 }
 //Points update
 alert('you now have ' + userPoints + ' points.');
+
+//Question 6 (Numeric Question)
+var answer6 = prompt('How many computers does Nick have?  Please answer numarically.  Example 5.');//makes answers all lowercase
+console.log('Sixth answer, ' + answer6);
+
+for (var i = 0; i < 4; i++){
+
+  if (answer6 > 20){
+    var answer6 = prompt('Nick is not that rich! Please try again'); //more than
+  } else if (answer6 < 20) {
+    var answer6 = prompt('I definitely have more than that.  Guess again.'); //less than
+  } else if (i === 4){
+  } else {
+    userPoints++;
+    alert('Correct, well done!');
+    break;
+  }
+}
+alert('you now have ' + userPoints + ' points.');
+
+//Question 7 (array)
