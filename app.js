@@ -33,8 +33,19 @@ var userPoints = 0;
 console.log('Answers');
 alert('Welcome to my gussing game!');
 //Name Inquirery
+
 var user = prompt('What is your name?');
-alert('Hi ' + user + '!  I am so glad you want to play my game.');
+/* original name Inquirery
+alert('Hi ' + user + '!  I am so glad you want to play my game.'); */
+
+//while loop Name Inquirery
+while(!user){
+  user = prompt('What is your name?  We need your name or you do not get to play.');
+}
+//this is the not-equals comparison operator
+if (user !== 'nick'){
+  alert('too bad you are not nick');
+}
 
 //Question 1
 var answer1 = prompt('Is Nick\'s favorite food sushi?  Type yes or no.').toLowerCase();//makes answers all lowercase
