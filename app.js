@@ -1,6 +1,7 @@
 'use strict'; //follow exactly
 
-//Custom alert window
+//Custom stylized alert window
+//please ignore this function section for assignment.
 function CustomAlert(){
   this.render = function(dialog){
     var winW = window.innerWidth;
@@ -21,6 +22,7 @@ function CustomAlert(){
     document.getElementById('dialogoverlay').style.display = "none";
   }
 }
+
 //Notice Caps!
 var Alert = new CustomAlert();
 

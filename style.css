@@ -10,11 +10,16 @@ h1{
   color: white;
 }
 
+p{
+  color: white;
+}
+
 button{
   color: white;
   font-size: 24px;
 }
 
+/*stylized alert window*/
 #dialogoverlay{
 	display: none;
 	opacity: .8;
