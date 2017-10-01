@@ -128,3 +128,20 @@ for (var i = 0; i < 4; i++){
 alert('you now have ' + userPoints + ' points.');
 
 //Question 7 (array)
+var answer7 = prompt('What is one of Nick\'s favorite Sci-Fi properties?').toLowerCase();
+console.log('Seventh answer, ' + answer7);
+
+var myFavoriteScifi = ['star wars', 'stargate', 'doctor who', 'the last starfighter'];
+
+for (var i = 0; i < myFavoriteScifi.lenght; i++){
+  console.log(myFavoriteScifi[i]);
+
+  if (answer7 != myFavoriteScifi[i]){
+    var answer7 = prompt('Nick is not a fan of that, guess again!');
+  }else if (j === 6){
+  }else if (answer7 === myFavoriteScifi[i]){
+    userPoints++;
+    alert('Good guess, Nick is a fan of ' + answer7 + '.');
+    break;
+  }
+}
