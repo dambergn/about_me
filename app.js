@@ -145,3 +145,4 @@ for (var i = 0; i < myFavoriteScifi.lenght; i++){
     break;
   }
 }
+alert('you now have ' + userPoints + ' points.');
