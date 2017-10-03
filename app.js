@@ -134,13 +134,13 @@ var myFavoriteScifi = ['star wars', 'stargate', 'doctor who', 'the last starfigh
 for (var i = 0; i < 6; i++){
   var answer7 = prompt('What is one of Nick\'s favorite Sci-Fi properties?').toLowerCase();
   //Disclaimer I am not a fan of this implimitation, however it was the only way I could get it to work.  I plan on fixing this later.
-    if (answer7 === myFavoriteScifi[0] || answer7 === myFavoriteScifi[1] || answer7 === myFavoriteScifi[2] || answer7 === myFavoriteScifi[3]){
-      alert('Good guess, Nick is a fan of ' + answer7 + '.');
-      userPoints++;
-      i = 6;
-    }
-    else {
-      alert('Nick is not a fan of that, guess again!');
-    }
+  if (answer7 === myFavoriteScifi[0] || answer7 === myFavoriteScifi[1] || answer7 === myFavoriteScifi[2] || answer7 === myFavoriteScifi[3]){
+    alert('Good guess, Nick is a fan of ' + answer7 + '.');
+    userPoints++;
+    i = 6;
+  }
+  else {
+    alert('Nick is not a fan of that, guess again!');
+  }
 }
 alert('you now have ' + userPoints + ' points.');
