@@ -49,98 +49,117 @@ if (user !== 'nick'){
 console.log('user, ' + user);
 
 //Question 1
-var answer1 = prompt('Is Nick\'s favorite food sushi?  Type yes or no.').toLowerCase();//makes answers all lowercase
-console.log('First answer, ' + answer1);
-//user answer input
-if(answer1 === 'yes' || answer1 === 'y'){
-  userPoints++;
-}else{
-  alert('Wrong, the only thing that can compare is a good medium rare steak!');
-}
-//Points update
-alert('you have ' + userPoints + ' points.');
+var q1 = function() {
+  var answer1 = prompt('Is Nick\'s favorite food sushi?  Type yes or no.').toLowerCase();//makes answers all lowercase
+  console.log('First answer, ' + answer1);
+  //user answer input
+  if(answer1 === 'yes' || answer1 === 'y'){
+    userPoints++;
+  }else{
+    alert('Wrong, the only thing that can compare is a good medium rare steak!');
+  }
+  //Points update
+  alert('you have ' + userPoints + ' points.');
+};
+
+q1();
 
 //Question 2
-var answer2 = prompt('Is Nick\'s favorite TV show Jersy Shore?  Type yes or no.').toLowerCase();//makes answers all lowercase
-console.log('Second answer, ' + answer2);
-//user answer input
-if(answer2 === 'no' || answer2 === 'n'){
-  userPoints++;
-}else{
-  alert('NOPE!, I don\'t understand how that is anyones favorite show.');
-}
-//Points update
-alert('you have ' + userPoints + ' points.');
-
+var q2 = function(){
+  var answer2 = prompt('Is Nick\'s favorite TV show Jersy Shore?  Type yes or no.').toLowerCase();//makes answers all lowercase
+  console.log('Second answer, ' + answer2);
+  //user answer input
+  if(answer2 === 'no' || answer2 === 'n'){
+    userPoints++;
+  }else{
+    alert('NOPE!, I don\'t understand how that is anyones favorite show.');
+  }
+  //Points update
+  alert('you have ' + userPoints + ' points.');
+};
+q2();
 //Question 3
-var answer3 = prompt('Does Nick like working with his hands?  Type yes or no.').toLowerCase();//makes answers all lowercase
-console.log('Third answer, ' + answer3);
-//user answer input
-if(answer3 === 'yes' || answer3 === 'y'){
-  userPoints++;
-}else{
-  alert('Yes he does, he has a workshop he spends most of his time awake in.');
-}
-//Points update
-alert('you have ' + userPoints + ' points.');
 
+var q3 = function(){
+  var answer3 = prompt('Does Nick like working with his hands?  Type yes or no.').toLowerCase();//makes answers all lowercase
+  console.log('Third answer, ' + answer3);
+  //user answer input
+  if(answer3 === 'yes' || answer3 === 'y'){
+    userPoints++;
+  }else{
+    alert('Yes he does, he has a workshop he spends most of his time awake in.');
+  }
+  //Points update
+  alert('you have ' + userPoints + ' points.');
+};
+q3();
 //Question 4
-var answer4 = prompt('Does Nick spend to much time in front of the computer?  Type yes or no.').toLowerCase();//makes answers all lowercase
-console.log('Fourth answer, ' + answer4);
-//user answer input
-if(answer4 === 'yes' || answer4 === 'y'){
-  userPoints++;
-}else{
-  alert('It is a matter of opinion really but he does.');
-}
-//Points update
-alert('you have ' + userPoints + ' points.');
-
+var q4 = function(){
+  var answer4 = prompt('Does Nick spend to much time in front of the computer?  Type yes or no.').toLowerCase();//makes answers all lowercase
+  console.log('Fourth answer, ' + answer4);
+  //user answer input
+  if(answer4 === 'yes' || answer4 === 'y'){
+    userPoints++;
+  }else{
+    alert('It is a matter of opinion really but he does.');
+  }
+  //Points update
+  alert('you have ' + userPoints + ' points.');
+};
+q4();
 //Question 5
-var answer5 = prompt('Does Nick play to many video games?  Type yes or no.').toLowerCase();//makes answers all lowercase
-console.log('Fifth answer, ' + answer5);
-//user answer input
-if(answer5 === 'no' || answer5 === 'n'){
-  userPoints++;
-}else{
-  alert('No, he rarely has time to play games anymore. It\'s very sad.');
-}
-//Points update
-alert('you now have ' + userPoints + ' points.');
 
+var q5 = function(){
+  var answer5 = prompt('Does Nick play to many video games?  Type yes or no.').toLowerCase();//makes answers all lowercase
+  console.log('Fifth answer, ' + answer5);
+  //user answer input
+  if(answer5 === 'no' || answer5 === 'n'){
+    userPoints++;
+  }else{
+    alert('No, he rarely has time to play games anymore. It\'s very sad.');
+  }
+  //Points update
+  alert('you now have ' + userPoints + ' points.');
+};
+
+q5();
 //Question 6 (Numeric Question)
-var answer6 = prompt('How many computers does Nick have?  Please answer numarically.  Example 5.');//makes answers all lowercase
-console.log('Sixth answer, ' + answer6);
+var q6 = function(){
+  var answer6 = prompt('How many computers does Nick have?  Please answer numarically.  Example 5.');//makes answers all lowercase
+  console.log('Sixth answer, ' + answer6);
 
-for (var i = 0; i < 4; i++){
+  for (var i = 0; i < 4; i++){
 
-  if (answer6 > 20){
-    var answer6 = prompt('Nick is not that rich! Please try again'); //more than
-  } else if (answer6 < 20) {
-    var answer6 = prompt('I definitely have more than that.  Guess again.'); //less than
-  } else if (i === 4){
-  } else {
-    userPoints++;
-    alert('Correct, well done!');
-    break;
+    if (answer6 > 20){
+      var answer6 = prompt('Nick is not that rich! Please try again'); //more than
+    } else if (answer6 < 20) {
+      var answer6 = prompt('I definitely have more than that.  Guess again.'); //less than
+    } else if (i === 4){
+    } else {
+      userPoints++;
+      alert('Correct, well done!');
+      break;
+    }
   }
-}
-alert('you now have ' + userPoints + ' points.');
-
+  alert('you now have ' + userPoints + ' points.');
+};
+q6();
 //Question 7 (array)
+var q7 = function(){
+  var myFavoriteScifi = ['star wars', 'stargate', 'doctor who', 'the last starfighter'];
 
-var myFavoriteScifi = ['star wars', 'stargate', 'doctor who', 'the last starfighter'];
-
-for (var i = 0; i < 6; i++){
-  var answer7 = prompt('What is one of Nick\'s favorite Sci-Fi properties?').toLowerCase();
-  //Disclaimer I am not a fan of this implimitation, however it was the only way I could get it to work.  I plan on fixing this later.
-  if (answer7 === myFavoriteScifi[0] || answer7 === myFavoriteScifi[1] || answer7 === myFavoriteScifi[2] || answer7 === myFavoriteScifi[3]){
-    alert('Good guess, Nick is a fan of ' + answer7 + '.');
-    userPoints++;
-    i = 6;
+  for (var i = 0; i < 6; i++){
+    var answer7 = prompt('What is one of Nick\'s favorite Sci-Fi properties?').toLowerCase();
+    //Disclaimer I am not a fan of this implimitation, however it was the only way I could get it to work.  I plan on fixing this later.
+    if (answer7 === myFavoriteScifi[0] || answer7 === myFavoriteScifi[1] || answer7 === myFavoriteScifi[2] || answer7 === myFavoriteScifi[3]){
+      alert('Good guess, Nick is a fan of ' + answer7 + '.');
+      userPoints++;
+      i = 6;
+    }
+    else {
+      alert('Nick is not a fan of that, guess again!');
+    }
   }
-  else {
-    alert('Nick is not a fan of that, guess again!');
-  }
-}
-alert('you now have ' + userPoints + ' points.');
+  alert('you now have ' + userPoints + ' points.');
+};
+q7();
